@@ -11,9 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
-  skip: True  # [win]
-  skip: True  # [osx]
+  number: 2
   skip: True  # [py<39]
   skip: True  # [py>311]
 
