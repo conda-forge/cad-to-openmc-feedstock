@@ -1,12 +1,12 @@
 {% set name = "cad-to-openmc" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  sha256: 28c3d6ad9ecd3ec972f1bff86fb108fa4b9569775fdf580f50f7756a3d91fe8b
+  sha256: 71b982e2fe01372638f0e75383ca5ccf94b2badfec6420df00834d5cf635befe
   url: https://github.com/openmsr/CAD_to_OpenMC/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
@@ -25,8 +25,10 @@ requirements:
     - python
     - setuptools >=61.0
     - pip
+    - numpy <2.0a0
   run:
     - python
+    - {{ pin_compatible('numpy') }}
     - gmsh
     - python-gmsh
     - moab >=5.3.0
