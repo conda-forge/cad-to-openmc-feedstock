@@ -48,6 +48,7 @@ test:
     - pincell1.step
   source_files:
     - tests
+    - examples/step_files
   commands:
     - pytest tests
   requires:
