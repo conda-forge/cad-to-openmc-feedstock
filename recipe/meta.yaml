@@ -1,12 +1,12 @@
 {% set name = "cad-to-openmc" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  sha256: 71b982e2fe01372638f0e75383ca5ccf94b2badfec6420df00834d5cf635befe
+  sha256: 9cdbdf8364ea0f0015a5ae8c32bd506eef76d48acdaebbf86c5e65fdf6070a2d
   url: https://github.com/openmsr/CAD_to_OpenMC/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
@@ -37,6 +37,7 @@ requirements:
     - ocp >=7.7.2
     - trimesh
     - networkx
+    - unidecode
 
 test:
   imports:
@@ -44,8 +45,10 @@ test:
     - CAD_to_OpenMC.assembly
   files:
     - 7pin.step
+    - pincell1.step
   source_files:
     - tests
+    - examples/step_files
   commands:
     - pytest tests
   requires:
