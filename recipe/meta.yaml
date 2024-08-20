@@ -45,6 +45,7 @@ test:
     - CAD_to_OpenMC.assembly
   files:
     - 7pin.step
+    - pincell1.step
   source_files:
     - tests
   commands:
