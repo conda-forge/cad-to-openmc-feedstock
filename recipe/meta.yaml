@@ -1,12 +1,12 @@
 {% set name = "cad-to-openmc" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  sha256: 9cdbdf8364ea0f0015a5ae8c32bd506eef76d48acdaebbf86c5e65fdf6070a2d
+  sha256: 86527dd467b49070061c7e554091ec66023853c2e7c20bb392194518cecc81f8
   url: https://github.com/openmsr/CAD_to_OpenMC/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
