@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [osx]
   skip: true  # [py<39]
@@ -28,7 +28,6 @@ requirements:
     - numpy <2.0a0
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - gmsh
     - python-gmsh
     - moab >=5.3.0
