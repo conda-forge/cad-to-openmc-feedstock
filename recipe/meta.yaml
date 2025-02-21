@@ -1,5 +1,5 @@
 {% set name = "cad-to-openmc" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   sha256: 4c41abb90b06128f3f4d9a6a5ad9ed13e928fc0fced30821aa554f7314c8b3e6
-  url: https://github.com/openmsr/CAD_to_OpenMC/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://github.com/united-neux/CAD_to_OpenMC/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -55,7 +55,7 @@ test:
     - pytest
 
 about:
-  home: https://www.github.com/openmsr/CAD_to_OpenMC
+  home: https://www.github.com/united-neux/CAD_to_OpenMC
   summary: Package to automagically convert step-geometries to h5m descriptions for neutronics by OpenMC
   description: |
     CAD_to_OpenMC is a tool that converts CAD-geometries to DAGMC-geometries by means of surface meshing

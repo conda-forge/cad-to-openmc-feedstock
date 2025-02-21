@@ -3,7 +3,7 @@ About cad-to-openmc-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cad-to-openmc-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.github.com/openmsr/CAD_to_OpenMC
+Home: https://www.github.com/united-neux/CAD_to_OpenMC
 
 Package license: MIT
 
