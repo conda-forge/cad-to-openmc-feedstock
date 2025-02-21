@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  sha256: 4c41abb90b06128f3f4d9a6a5ad9ed13e928fc0fced30821aa554f7314c8b3e6
+  sha256: 417464cde713744276d3b38b61c6c0559976fbc7434497fd18e9a5680195a74f
   url: https://github.com/united-neux/CAD_to_OpenMC/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
